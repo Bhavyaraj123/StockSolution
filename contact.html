@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>  <title>interface project</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+
+
+    
+    <div class="navhead">
+        <div class="img">
+            <a href="index.html"> <h2>STOCK <span>STATUS</span></h2></a>
+        </div>
+        
+        <div class="navbar">
+        <ul class="respose">
+           <!-- <li> <img src="logos.jpeg" alt="" class="image"></li> -->
+            <li><a href="index.html">Solution</a></li>
+            <li><a href="products.html"> Product</a></li>
+            <li><a href="#about.html">About us</a></li>
+            <li><a  href="careers.html" class="disable" >Careers</a></li>
+            <li><a href="contact.html">Contact US</a></li>
+        </ul>    
+        <div class="togle-btn">
+            <i class='bx bx-menu'></i>
+        </div>
+    </div>
+    <div class="dropdown open">
+    
+        <li><a href="index.html">Solution</a></li>
+        <li><a href="products.html"> Product</a></li>
+        <li><a href="#about.html">About us</a></li>
+        <li><a  href="careers.html" class="disable" >Careers</a></li>
+        <li><a href="contact.html">Contact US</a></li>
+    
+    </div>
+    
+</div>
+
+</head>
+<body class="body">
+
+    <div class="form-div-1">
+    <div class="form-div">
+    <div class="form">
+    <h2>Register<span><i><i class="fa-solid fa-registered"></i></span></h2>
+    <form id="register">
+        <div class="cnt">
+        <label class="lbl">Name:</label><br>
+        <input type="text" placeholder="enter your name " name="lname" id="name" required>
+        <br>
+        <br>
+        <label class="lbl">Email:</label><br>
+        <input type="email" placeholder="enter yout email" id="name" required>
+        <br>
+        <br>
+        <label class="lbl">Your Age:</label><br>
+        <input type="number" name="age" id="name" placeholder="Enter your age" required>
+        <br>
+        <br>
+        <label class="lbl"for="">Gender:</label><br>
+        <input type="radio" name="Gender"  placeholder="Select your gender"><label class="ml">Male</label><br>
+        <input type="radio" name="Gender"  placeholder="Select your gender"><label  class="fl">Female</label>
+        <br>
+        <br>
+        <label class="lbl" for="">Review:</label>
+        <br>
+        <textarea name="text" id="name" cols="10" rows="10" placeholder="Give your expensive review" id="name" required></textarea>
+        <br>
+        <br>
+      </div>
+        <div class="buttoons">
+            <button class="btnss"> <h2>Submit</h2></button>
+            <button class="btnss1"> <h2>Cancel </h2></button>
+
+        </div>
+    </form>
+</div>
+</div>
+
+</div>
+<script>
+    const toglebtn = document.querySelector('.togle-btn')
+    const toglebtnicon = document.querySelector('.togle-btn i')
+    const dropdownmenu = document.querySelector('.dropdown')
+    toglebtn.onclick =  function(){
+      dropdownmenu.classList.toggle('open')
+
+      const isOpen =dropdownmenu.classList.contains('open')
+      toglebtnicon.classList= isOpen?'bx bx-x':'bx bx-menu'
+    }
+</script>
+</body>
+</html>
